@@ -8,8 +8,8 @@ import { IoCallSharp } from "react-icons/io5";
 export default function Footer() {
   return (
     <footer className="py-16">
-      <div className="md:px-12 relative lg:px-28">
-        <div className="container m-auto space-y-6 text-blue-gray-600 dark:text-blue-gray-300">
+      <div className="md:px-12 px-4 relative lg:px-28">
+        <div className="container flex items-center justify-center flex-col m-auto space-y-6 text-blue-gray-600 dark:text-blue-gray-300">
           <Image
             src="/images/logo.png"
             width={260}

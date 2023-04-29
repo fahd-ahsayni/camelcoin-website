@@ -44,15 +44,15 @@ const progressData = [
 
 export default function Chart() {
   return (
-    <section className="px-8">
+    <section className="lg:px-8 px-1 max-w-7xl mx-auto">
       <div className="py-1 sm:py-16 lg:py-24">
-        <div className="px-4 max-w-full sm:px-6 lg:px-8">
+        <div className="px-4 mx-auto flex items-center justify-center flex-col max-w-full sm:px-6 lg:px-8">
           <div className="text-center">
             <Typography
               variant="h2"
               className="text-blue-gray-700 dark:text-white md:text-2xl"
             >
-              Our Tactical Partners
+              Tokenomics chart
             </Typography>
             <Typography
               variant="paragraph"

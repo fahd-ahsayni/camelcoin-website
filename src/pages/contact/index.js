@@ -3,7 +3,7 @@ import { Typography } from "@/material";
 
 export default function Contact() {
   return (
-    <section className="py-10 h-screen w-screen flex items-center justify-center bg-blue-gray-50 dark:bg-gray-900 sm:py-16 lg:py-24">
+    <section className="py-10 mt-52 lg:mt-12 h-screen w-screen flex items-center justify-center bg-blue-gray-50 dark:bg-gray-900 sm:py-16 lg:py-24">
       <div
         className="absolute z-0 opacity-30 inset-0 blur-[118px] max-w-lg h-[800px] mx-auto sm:max-w-3xl sm:h-[400px]"
         style={{

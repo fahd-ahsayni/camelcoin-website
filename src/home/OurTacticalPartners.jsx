@@ -32,7 +32,7 @@ const logos = [
 export default function OurTacticalPartners() {
   return (
     <div className="mt-32">
-      <div className="flex flex-col items-center w-screen">
+      <div className="flex flex-col items-center mx-auto">
         <div className="container relative z-[1] m-auto px-6 md:px-8">
           <div className="m-auto text-center md:w-8/12 lg:w-6/12">
             <Typography variant="h2" className="text-blue-gray-700 dark:text-white md:text-2xl">

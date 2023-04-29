@@ -83,7 +83,7 @@ export default function HomePage() {
             }}
           />
         </div>
-        <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
           <div className="flex items-center justify-center py-8">
             <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-brown-500/50 before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-amber-200 after:via-brown-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-brown-700/10 after:dark:from-sky-900 after:dark:via-amber-500/40 before:lg:h-[360px]">
               <motion.img
@@ -96,23 +96,23 @@ export default function HomePage() {
           </div>
           <Model />
           <div className="text-center">
-            <h1 className="text-4xl capitalize font-bold tracking-tight text-blue-gray-900 dark:text-blue-gray-50 sm:text-6xl">
+            <h1 className="text-3xl capitalize font-bold tracking-tight text-blue-gray-900 dark:text-blue-gray-50 sm:text-6xl">
               The{" "}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-brown-400 via-brown-600 to-brown-400 animate-gradient drop-shadow-2xl">
                 CamelCoin
               </span>{" "}
               project, welcome to Fairtrade Revolution
             </h1>
-            <p className="mt-6 text-lg leading-8 text-blue-gray-600 dark:text-blue-gray-100">
+            <p className="mt-6 md:text-lg text-sm leading-8 text-blue-gray-600 dark:text-blue-gray-100">
               Join the decentralized finance revolution with Camelcoin - the
               secure and efficient digital currency that anyone can use with
               ease.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Button variant="gradient" color="green">
+            <div className="mt-10 flex flex-col space-y-4 md:space-y-0 md:flex-row items-center justify-center gap-x-6">
+              <Button variant="gradient" color="green" className="md:w-1/2 w-full">
                 Buy Camelcoin on XT.com
               </Button>
-              <Button variant="gradient" color="blue">
+              <Button variant="gradient" color="blue" className="md:w-1/2 w-full">
                 Buy Camelcoin now on Cameleader
               </Button>
             </div>

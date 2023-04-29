@@ -49,7 +49,7 @@ const data = [
 ];
 export default function TokenDistribution() {
   return (
-    <div className="px-8 my-32">
+    <div className="px-8 my-32 max-w-7xl mx-auto">
       <div className="px-4 sm:px-0">
         <Typography
           variant="h2"
@@ -59,7 +59,7 @@ export default function TokenDistribution() {
         >
           Token Distribution
         </Typography>
-        <p className="mt-1 max-w-4xl text-sm leading-6 text-blue-gray-500 dark:text-blue-gray-200">
+        <p className="mt-1 text-sm leading-6 text-blue-gray-500 dark:text-blue-gray-200">
           Here are some of the mains informations concernig the camelcoin token
           on Cardano blockchain before {"it's"} switch to th CameLink
           blockchain. Most of those main functions will stay after that. There
@@ -71,7 +71,7 @@ export default function TokenDistribution() {
           rewarded at the switch to CameLink.
         </p>
       </div>
-      <div className="mt-6 border-t border-blue-gray-100 dark:border-blue-gray-800 min-w-5xl mx-auto lg:min-w-[1250px]">
+      <div className="mt-6 border-t border-blue-gray-100 dark:border-blue-gray-800">
         <dl className="divide-y divide-blue-gray-100 dark:divide-blue-gray-800">
           {data.map(({ name, description, href }, key) => (
             <div
