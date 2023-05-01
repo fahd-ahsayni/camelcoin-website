@@ -6,6 +6,7 @@ import Footer from "@/home/Footer";
 import TokenDistribution from "@/home/TokenDistribution";
 import Image from "next/image";
 import Background from "./assets/legacy.png";
+import About from "@/home/About";
 
 export default function Home() {
   const handleOnLoadComplete = (image) => {
@@ -14,7 +15,7 @@ export default function Home() {
   };
   return (
     <>
-      <section className="overflow-x-hidden dark:bg-gray-900/90 bg-blue-gray-50/90">
+      <section className="overflow-x-hidden scroll-smooth dark:bg-gray-900/90 bg-blue-gray-50/90">
         <Image
           src={Background}
           className="absolute w-full h-full top-0 left-0 right-0 opacity-0 transition-opacity duration-[2s] object-cover"
@@ -22,6 +23,7 @@ export default function Home() {
           onLoadingComplete={(image) => handleOnLoadComplete(image)}
         />
         <HomePage />
+        <About />
         <OurTacticalPartners />
         <TokenDistribution />
         <Chart />

@@ -8,7 +8,7 @@ import {
 import { ChevronDownIcon, PhoneIcon } from "@heroicons/react/20/solid";
 import { BiMoon, BiSun } from "react-icons/bi";
 import { Typography } from "@/material";
-import { GiCamel, GiCamelHead } from "react-icons/gi";
+import { GiCamelHead } from "react-icons/gi";
 import {
   HiCubeTransparent,
   HiOutlineDevicePhoneMobile,
@@ -22,12 +22,6 @@ import { IoMailOutline } from "react-icons/io5";
 import Image from "next/image";
 
 const products = [
-  {
-    name: "About",
-    description: "Learn about the history and mission of CamelCoin",
-    href: "/about",
-    icon: HiOutlineInformationCircle,
-  },
   {
     name: "Team",
     description: "Meet the CamelCoin team behind the project",

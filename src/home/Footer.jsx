@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { AiOutlineWhatsApp } from "react-icons/ai";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { IoCallSharp } from "react-icons/io5";
 import RotateCoin from "./assets/aaa.gif"
 
@@ -37,19 +37,19 @@ export default function Footer() {
           </p>
 
           <div className="m-auto flex w-max items-center justify-between space-x-4">
-            <a href="mailto:hello@mail.com" aria-label="send mail">
+            <a href="tel:+212808657569" aria-label="send mail">
               <IoCallSharp className="w-6 h-6" />
             </a>
-            <a href="tel:+243996660436" aria-label="call">
+            <a href="https://www.facebook.com/CamelcoinICO/" target="_blank" aria-label="facebook">
               <FaFacebook className="w-6 h-6" />
             </a>
-            <a href="#" title="facebook" target="blank" aria-label="facebook">
-              <FaLinkedin className="w-6 h-6" />
-            </a>
-            <a href="#" title="facebook" target="blank" aria-label="facebook">
+            <a href="https://www.instagram.com/camelcoin_/" title="instagram" target="blank" aria-label="instagram">
               <FaInstagram className="w-6 h-6" />
             </a>
-            <a href="#" title="linkedin" target="blank" aria-label="linkedin">
+            <a href="https://youtube.com/channel/UCbEnO3TtJ4wBxP745CCYEkg" title="youtube" target="blank" aria-label="instagram">
+              <FaYoutube className="w-6 h-6" />
+            </a>
+            <a href="https://wa.me/212808657569" title="whatsApp" target="blank" aria-label="whatsapp">
               <AiOutlineWhatsApp className="w-6 h-6" />
             </a>
           </div>
