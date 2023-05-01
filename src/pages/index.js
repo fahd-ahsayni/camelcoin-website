@@ -17,7 +17,7 @@ export default function Home() {
       <section className="overflow-x-hidden dark:bg-gray-900/90 bg-blue-gray-50/90">
         <Image
           src={Background}
-          className="absolute w-full h-full top-0 left-0 right-0 opacity-0 transition-opacity duration-[2s]"
+          className="absolute w-full h-full top-0 left-0 right-0 opacity-0 transition-opacity duration-[2s] object-cover"
           alt="background camelcoin"
           onLoadingComplete={(image) => handleOnLoadComplete(image)}
         />

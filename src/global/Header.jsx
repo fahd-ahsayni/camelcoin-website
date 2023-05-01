@@ -19,6 +19,7 @@ import { AiOutlineTeam } from "react-icons/ai";
 import { TbSteam } from "react-icons/tb";
 import Link from "next/link";
 import { IoMailOutline } from "react-icons/io5";
+import Image from "next/image";
 
 const products = [
   {
@@ -117,10 +118,16 @@ export default function Header() {
             <Link href="/">
               <Typography
                 variant="h5"
-                className="dark:text-blue-gray-50 flex items-center justify-center text-blue-gray-900"
+                className="dark:text-blue-gray-50 space-x-2 flex items-center justify-center text-blue-gray-900"
               >
-                <GiCamel className="mr-2.5" />
-                <span>Camelcoin.io</span>
+                <Image
+                  src="/logo.png"
+                  width={40}
+                  height={40}
+                  alt="camelcoin logo"
+                  className="w-5 h-5"
+                />
+                <span>Camelcoin</span>
               </Typography>
             </Link>
           </div>
@@ -144,7 +151,7 @@ export default function Header() {
           <Popover className="relative">
             <Popover.Button className="flex space-x-2 items-center gap-x-1 text-sm font-semibold leading-6 dark:text-blue-gray-50 text-blue-gray-900">
               <HiOutlineSquare3Stack3D className="w-5 h-5" />
-              <span>Sections</span>
+              <span>Pages</span>
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-blue-gray-900 dark:text-blue-gray-50"
                 aria-hidden="true"
@@ -216,7 +223,8 @@ export default function Header() {
           </Link>
           <a
             href="https://cmlglobal.tech/"
-            target="_blank" rel="noopener noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-sm space-x-2 flex items-center justify-center font-semibold leading-6 text-blue-gray-900 dark:text-blue-gray-50"
           >
             <HiCubeTransparent className="w-5 h-5" />
@@ -224,7 +232,8 @@ export default function Header() {
           </a>
           <a
             href="https://cameleader.com/"
-            target="_blank" rel="noopener noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-sm space-x-2 flex items-center justify-center font-semibold leading-6 text-blue-gray-900 dark:text-blue-gray-50"
           >
             <GiCamelHead className="w-5 h-5" />
@@ -257,13 +266,21 @@ export default function Header() {
             <Link href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Contact</span>
               {mobileMenuOpen && (
-                <Typography
-                  variant="h5"
-                  className="dark:text-blue-gray-50 flex items-center justify-center text-blue-gray-900"
-                >
-                  <GiCamel className="mr-2.5" />
-                  <span>Camelcoin.io</span>
-                </Typography>
+                <Link href="/"  onClick={() => setMobileMenuOpen(false)}>
+                  <Typography
+                    variant="h5"
+                    className="dark:text-blue-gray-50 space-x-2 flex items-center justify-center text-blue-gray-900"
+                  >
+                    <Image
+                      src="/logo.png"
+                      width={40}
+                      height={40}
+                      alt="camelcoin logo"
+                      className="w-5 h-5"
+                    />
+                    <span>Camelcoin</span>
+                  </Typography>
+                </Link>
               )}
             </Link>
             <button
@@ -287,7 +304,7 @@ export default function Header() {
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full items-center dark:text-gray-50 text-blue-gray-900 justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-blue-gray-50 dark:hover:bg-gray-800">
-                        Sections
+                        Pages
                         <ChevronDownIcon
                           className={classNames(
                             open ? "rotate-180" : "",
@@ -322,7 +339,8 @@ export default function Header() {
                 </Link>
                 <a
                   onClick={() => setMobileMenuOpen(false)}
-                  target="_blank" rel="noopener noreferrer"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   href="https://cmlglobal.tech/"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-blue-gray-900 dark:hover:bg-gray-800 dark:text-blue-gray-50 hover:bg-blue-gray-50"
                 >
@@ -330,7 +348,8 @@ export default function Header() {
                 </a>
                 <a
                   onClick={() => setMobileMenuOpen(false)}
-                  target="_blank" rel="noopener noreferrer"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   href="https://cameleader.com/"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-blue-gray-900 dark:hover:bg-gray-800 dark:text-blue-gray-50 hover:bg-blue-gray-50"
                 >

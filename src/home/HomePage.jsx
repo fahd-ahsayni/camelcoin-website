@@ -124,7 +124,7 @@ export default function HomePage() {
                   color="blue"
                   className="w-full"
                 >
-                  Buy Camelcoin now on Cameleader
+                  buy camelcoin by credit card 
                 </Button>
               </a>
             </div>

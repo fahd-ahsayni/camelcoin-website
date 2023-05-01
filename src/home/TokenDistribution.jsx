@@ -91,7 +91,7 @@ export default function TokenDistribution() {
                   {description}
                 </a>
               ) : (
-                <dd className="mt-1 text-sm leading-6 text-blue-gray-700 dark:text-blue-gray-200 sm:col-span-2 sm:mt-0">
+                <dd className="mt-1 text-sm flex flex-wrap overflow-auto leading-6 text-blue-gray-700 dark:text-blue-gray-200 sm:col-span-2 sm:mt-0">
                   {description}
                 </dd>
               )}
