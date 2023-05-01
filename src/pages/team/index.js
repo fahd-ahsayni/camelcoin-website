@@ -91,7 +91,7 @@ const teamMembers = [
 
 export default function Team() {
   return (
-    <section className="mt-24 w-screen flex items-center justify-center sm:py-16 lg:py-24">
+    <section className="mt-24 flex items-center justify-center sm:py-16 lg:py-24">
          <div
         className="absolute z-0 opacity-30 inset-0 blur-[118px] max-w-lg h-[800px] mx-auto sm:max-w-3xl sm:h-[400px]"
         style={{

@@ -31,23 +31,4 @@
   animation: gradient 3s ease-in-out infinite;
 }
 
-.homepage-container {
-  background-image: url("/images/legacy.png");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: auto;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotateY(0deg);
-  }
-  100% {
-    transform: rotateY(1turn);
-  }
-}
-
-.coin-image {
-  animation: rotate 4s linear infinite;
-}
 
