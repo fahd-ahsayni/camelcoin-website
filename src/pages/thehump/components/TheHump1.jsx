@@ -29,7 +29,7 @@ export default function TheHump1() {
                 illegal trafficking.
               </p>
               <div className="flex flex-row items-center mt-8 space-x-4 lg:mt-12">
-                <a href="#" className="z-10" role="button">
+                <a href="https://apps.apple.com/ma/app/cml-globals-the-hump/id1619884482?l=fr" target="_blank" className="z-10" role="button">
                   <img
                     className="w-auto h-14"
                     src="https://cdn.rareblocks.xyz/collection/celebration/images/cta/8/btn-app-store.svg"
@@ -38,6 +38,7 @@ export default function TheHump1() {
                 </a>
                 <a
                   href="https://play.google.com/store/search?q=the+hump&c=apps&hl=fr&gl=US"
+                  target="_blank"
                   title=""
                   className="z-10"
                   role="button"
