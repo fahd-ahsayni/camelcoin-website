@@ -2,31 +2,32 @@ import { Typography } from "@/material";
 import Image from "next/image";
 import React from "react";
 
-const logos2 = [
-  "/TCPP/p1.png",
-  "/TCPP/p2.png",
-  "/TCPP/p3.png",
-  "/TCPP/p5.png",
-  "/TCPP/p7.png",
-  "/TCPP/p8.png",
-  "/TCPP/p9.png",
-  "/TCPP/p10.png",
-  "/TCPP/p11.png",
-  "/TCPP/p12.png",
-  "/TCPP/p13.png",
-  "/TCPP/p14.png",
-  "/TCPP/p15.png",
-  "/TCPP/p16.png",
-  "/TCPP/p17.png",
-];
 
-const logos1 = [
-  "/OSP/p1.png",
-  "/OSP/p2.png",
-  "/OSP/p3.png",
-  "/OSP/p4.png",
-  "/OSP/p5.png",
-  "/OSP/p6.png",
+import tcpp1 from "../assets/TCPP/p1.png";
+import tcpp2 from "../assets/TCPP/p2.png";
+import tcpp3 from "../assets/TCPP/p3.png";
+import tcpp5 from "../assets/TCPP/p5.png";
+import tcpp7 from "../assets/TCPP/p7.png";
+import tcpp8 from "../assets/TCPP/p8.png";
+import tcpp9 from "../assets/TCPP/p9.png";
+import tcpp10 from "../assets/TCPP/p10.png";
+import tcpp11 from "../assets/TCPP/p11.png";
+import tcpp12 from "../assets/TCPP/p12.png";
+import tcpp13 from "../assets/TCPP/p13.png";
+import tcpp14 from "../assets/TCPP/p14.png";
+import tcpp15 from "../assets/TCPP/p15.png";
+import tcpp16 from "../assets/TCPP/p16.png";
+import tcpp17 from "../assets/TCPP/p17.png";
+
+const logoTcpp = [tcpp1, tcpp2, tcpp3, tcpp5, tcpp7, tcpp8, tcpp9, tcpp10, tcpp11, tcpp12, tcpp13, tcpp14, tcpp15, tcpp16, tcpp17];
+
+const LogoOsp = [
+  "https://ik.imagekit.io/binwwyjjg/partners/P6.png?updatedAt=1682947256736",
+  "https://ik.imagekit.io/binwwyjjg/partners/P4.png?updatedAt=1682947256719",
+  "https://ik.imagekit.io/binwwyjjg/partners/P5.png?updatedAt=1682947256711",
+  "https://ik.imagekit.io/binwwyjjg/partners/P2.png?updatedAt=1682947256698",
+  "https://ik.imagekit.io/binwwyjjg/partners/p1.png?updatedAt=1682947256697",
+  "https://ik.imagekit.io/binwwyjjg/partners/P3.png?updatedAt=1682947256707",
 ];
 
 export default function Partners() {
@@ -42,14 +43,17 @@ export default function Partners() {
           </Typography>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3">
-          {logos1.map((src, key) => (
+          {LogoOsp.map((src, key) => (
             <div key={key} className="p-4">
               <Image
                 src={src}
-                className="w-52 rounded-full"
+                className="w-52 rounded-full opacity-0 transition-opacity duration-[2s]"
                 alt={`camelcoin partner ${1}`}
                 width={260}
                 height={260}
+                onLoadingComplete={(image) =>
+                  image.classList.remove("opacity-0")
+                }
               />
             </div>
           ))}
@@ -66,14 +70,17 @@ export default function Partners() {
           </Typography>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5">
-          {logos2.map((src, key) => (
+          {logoTcpp.map((src, key) => (
             <div key={key} className="p-4">
               <Image
                 src={src}
-                className="w-32 rounded-full"
+                className="w-32 rounded-full opacity-0 transition-opacity duration-[2s]"
                 alt={`camelcoin partner ${1}`}
                 width={260}
                 height={260}
+                onLoadingComplete={(image) =>
+                  image.classList.remove("opacity-0")
+                }
               />
             </div>
           ))}

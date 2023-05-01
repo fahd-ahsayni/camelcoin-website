@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/material";
+import myImage from "../assets/about.png";
 
 export default function About() {
   return (
@@ -12,7 +13,9 @@ export default function About() {
                 height={400}
                 width={400}
                 alt="House"
-                src="/images/about.png"
+                placeholder="blure"
+                priority
+                src={myImage}
                 className="absolute inset-0 h-full w-full object-cover"
               />
             </div>
@@ -45,21 +48,30 @@ export default function About() {
                 the platform to thousands and all needs (oils, honeys, herbs...)
               </p>
               <div className="flex flex-col md:flex-row items-center justify-start space-x-0 md:space-y-0 md:space-x-6 space-y-4 mt-8">
-                <Button color="brown" variant="gradient" className="w-full">
-                  Project whitepaper
-                </Button>
-                <Button color="brown" variant="gradient" className="w-full">
-                  blockchaine
-                </Button>
+                <a>
+                  <Button color="brown" variant="gradient" className="w-full">
+                    Project Whitepaper
+                  </Button>
+                </a>
+
+                <a>
+                  <Button color="brown" variant="gradient" className="w-full">
+                    Blockchain Whitepaper
+                  </Button>
+                </a>
               </div>
               <div className="flex flex-col md:flex-row items-center justify-start mt-4 md:mt-3 space-x-0 md:space-y-0 space-y-4 md:space-x-6">
-                <Button color="brown" variant="gradient" className="w-full">
-                  project greenpaper
-                </Button>
+                <a>
+                  <Button color="brown" variant="gradient" className="w-full">
+                    Project Greenpaper
+                  </Button>
+                </a>
 
-                <Button color="brown" variant="gradient" className="w-full">
-                  camelcoin pitch deck
-                </Button>
+                <a>
+                  <Button color="brown" variant="gradient" className="w-full">
+                    Camelcoin Pitch Deck
+                  </Button>
+                </a>
               </div>
             </div>
           </div>

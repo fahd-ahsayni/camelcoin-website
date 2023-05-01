@@ -1,9 +1,8 @@
-import { Typography } from "@/material";
 import Image from "next/image";
-import React from "react";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { IoCallSharp } from "react-icons/io5";
+import RotateCoin from "./assets/aaa.gif"
 
 export default function Footer() {
   return (
@@ -11,11 +10,11 @@ export default function Footer() {
       <div className="md:px-12 px-4 relative lg:px-28">
         <div className="container flex items-center justify-center flex-col m-auto space-y-6 text-blue-gray-600 dark:text-blue-gray-300">
           <Image
-            src="/images/logo.png"
+            src={RotateCoin}
             width={260}
             height={260}
             alt="Camelcoin"
-            className="coin-image m-auto w-20"
+            className="m-auto w-24"
           />
 
           <p className="mt-1 text-center max-w-2xl text-sm leading-6 text-blue-gray-500 dark:text-blue-gray-200">

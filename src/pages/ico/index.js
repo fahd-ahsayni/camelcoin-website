@@ -45,7 +45,7 @@ const features = [
 
 export default function Ico() {
   return (
-    <section className="bg-blue-gray-50 z-[0] dark:bg-gray-900 w-screen flex items-center justify-center overflow-x-hidden">
+    <section className="bg-blue-gray-50 z-[0] dark:bg-gray-900 flex items-center justify-center overflow-x-hidden">
       <div className="relative mt-22 py-16 sm:py-24 lg:py-32">
         <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-800 dark:text-gray-50 sm:text-4xl">

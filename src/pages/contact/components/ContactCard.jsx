@@ -8,8 +8,7 @@ import {
   Textarea,
   Button,
 } from "@/material";
-import { ReCAPTCHA } from "react-google-recaptcha";
-import React, { useRef, useState } from "react";
+import { useState } from "react";
 import emailjs from "emailjs-com";
 
 export default function ContactCard() {
@@ -56,22 +55,10 @@ export default function ContactCard() {
       );
   };
 
-  const onReCAPTCHAChange = (captchaCode) => {
-    // If the reCAPTCHA code is null or undefined indicating that
-    // the reCAPTCHA was expired then return early
-    if(!captchaCode) {
-      return;
-    }
 
-    // Reset the reCAPTCHA so that it can be executed again if user 
-    // submits another email.
-    recaptchaRef.current.reset();
-  }
-
-  const recaptchaRef = useRef();
 
   return (
-    <Card className="w-96 bg-gray-50 dark:bg-primary-dark-light shadow-xl">
+    <Card className="md:w-96 w-full bg-gray-50 dark:bg-primary-dark-light shadow-xl">
       <CardHeader
         variant="gradient"
         color="brown"
@@ -120,13 +107,6 @@ export default function ContactCard() {
             value={formData.message}
             onChange={handleChange}
           />
-          <div className="mb-3">
-            <ReCAPTCHA
-              ref={recaptchaRef}
-              size="invisible"
-              sitekey="6LeFGsolAAAAAON8BVRoDURNtO9lEoo2cY7GoTPL"
-            />
-          </div>
         </CardBody>
         <CardFooter className="pt-0">
           <Button

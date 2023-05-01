@@ -1,11 +1,6 @@
-import {
-  Button,
-  Dialog,
-  DialogBody,
-  DialogFooter,
-} from "@/material";
-import { motion } from "framer-motion";
+import { Button, Dialog, DialogBody, DialogFooter } from "@/material";
 import { Fragment, useState } from "react";
+import Image from "next/image";
 
 function Model() {
   const [open, setOpen] = useState(false);
@@ -86,11 +81,16 @@ export default function HomePage() {
         <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
           <div className="flex items-center justify-center py-8">
             <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-brown-500/50 before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-amber-200 after:via-brown-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-brown-700/10 after:dark:from-sky-900 after:dark:via-amber-500/40 before:lg:h-[360px]">
-              <motion.img
-                src="/images/camelcoin3d.png"
+              <Image
+                src="https://ik.imagekit.io/binwwyjjg/camelcoin3d__1_.png?updatedAt=1682949343358"
                 alt="Camelcoin"
-                width={200}
-                height={200}
+                width={260}
+                height={260}
+                priority
+                className="w-32 h-32 lg:w-52 lg:h-52 opacity-0 transition-opacity duration-[2s]"
+                onLoadingComplete={(image) =>
+                  image.classList.remove("opacity-0")
+                }
               />
             </div>
           </div>
@@ -109,12 +109,24 @@ export default function HomePage() {
               ease.
             </p>
             <div className="mt-10 flex flex-col space-y-4 md:space-y-0 md:flex-row items-center justify-center gap-x-6">
-              <Button variant="gradient" color="green" className="md:w-1/2 w-full">
-                Buy Camelcoin on XT.com
-              </Button>
-              <Button variant="gradient" color="blue" className="md:w-1/2 w-full">
-                Buy Camelcoin now on Cameleader
-              </Button>
+              <a className="md:w-1/2 w-full" target="_blank" rel="noopener noreferrer" href="https://www.xt.com/tradePro/cml_usdt">
+                <Button
+                  variant="gradient"
+                  color="green"
+                  className="w-full"
+                >
+                  Buy Camelcoin on XT.com
+                </Button>
+              </a>
+              <a  className="md:w-1/2 w-full" target="_blank" rel="noopener noreferrer" href="https://www.cameleader.com/store/camelcoinofficial">
+                <Button
+                  variant="gradient"
+                  color="blue"
+                  className="w-full"
+                >
+                  Buy Camelcoin now on Cameleader
+                </Button>
+              </a>
             </div>
           </div>
         </div>

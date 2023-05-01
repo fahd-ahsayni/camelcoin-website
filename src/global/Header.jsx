@@ -17,8 +17,8 @@ import {
 } from "react-icons/hi2";
 import { AiOutlineTeam } from "react-icons/ai";
 import { TbSteam } from "react-icons/tb";
-import { HiOutlineMail } from "react-icons/hi";
 import Link from "next/link";
+import { IoMailOutline } from "react-icons/io5";
 
 const products = [
   {
@@ -50,11 +50,11 @@ const products = [
 
 const callsToAction = [
   {
-    name: "Cameleader.com",
-    href: "https://cameleader.com/",
-    icon: GiCamelHead,
+    name: "Conatact us",
+    href: "/contact",
+    icon: IoMailOutline,
   },
-  { name: "Call us", href: "#", icon: PhoneIcon },
+  { name: "Call us", href: "tel:+212808657569", icon: PhoneIcon },
 ];
 
 function classNames(...classes) {
@@ -190,7 +190,7 @@ export default function Header() {
                 </div>
                 <div className="grid grid-cols-2 divide-x divide-blue-gray-900/5 bg-blue-gray-50 dark:bg-blue-gray-900">
                   {callsToAction.map((item) => (
-                    <a
+                    <Link
                       key={item.name}
                       href={item.href}
                       className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-blue-gray-900 dark:text-blue-gray-50 hover:bg-blue-gray-100 dark:hover:bg-blue-gray-800"
@@ -200,7 +200,7 @@ export default function Header() {
                         aria-hidden="true"
                       />
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </Popover.Panel>
@@ -214,20 +214,22 @@ export default function Header() {
             <HiOutlineDevicePhoneMobile className="w-5 h-5" />
             <span>Hump App</span>
           </Link>
-          <Link
-            href="#"
+          <a
+            href="https://cmlglobal.tech/"
+            target="_blank" rel="noopener noreferrer"
             className="text-sm space-x-2 flex items-center justify-center font-semibold leading-6 text-blue-gray-900 dark:text-blue-gray-50"
           >
             <HiCubeTransparent className="w-5 h-5" />
             <span>CML Global</span>
-          </Link>
-          <Link
-            href="/contact"
+          </a>
+          <a
+            href="https://cameleader.com/"
+            target="_blank" rel="noopener noreferrer"
             className="text-sm space-x-2 flex items-center justify-center font-semibold leading-6 text-blue-gray-900 dark:text-blue-gray-50"
           >
-            <HiOutlineMail className="w-5 h-5" />
-            <span>Contact</span>
-          </Link>
+            <GiCamelHead className="w-5 h-5" />
+            <span>Cameleader</span>
+          </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           {darkMode === "light" ? (
@@ -312,41 +314,46 @@ export default function Header() {
                   )}
                 </Disclosure>
                 <Link
+                  onClick={() => setMobileMenuOpen(false)}
                   href="/thehump"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-blue-gray-900 dark:hover:bg-gray-800 dark:text-blue-gray-50 hover:bg-blue-gray-50"
                 >
                   Hump App
                 </Link>
-                <Link
-                  href="#"
+                <a
+                  onClick={() => setMobileMenuOpen(false)}
+                  target="_blank" rel="noopener noreferrer"
+                  href="https://cmlglobal.tech/"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-blue-gray-900 dark:hover:bg-gray-800 dark:text-blue-gray-50 hover:bg-blue-gray-50"
                 >
                   CML Global
-                </Link>
-                <Link
-                  href="/contact"
+                </a>
+                <a
+                  onClick={() => setMobileMenuOpen(false)}
+                  target="_blank" rel="noopener noreferrer"
+                  href="https://cameleader.com/"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-blue-gray-900 dark:hover:bg-gray-800 dark:text-blue-gray-50 hover:bg-blue-gray-50"
                 >
-                  Contact
-                </Link>
+                  Cameleader
+                </a>
               </div>
               <div className="">
                 {darkMode === "light" ? (
-                  <div onClick={toggleDarkMode} className="flex items-center py-2 mt-2 hover:bg-blue-gray-50 cursor-pointer rounded-lg">
-                    <BiMoon
-                      onClick={toggleDarkMode}
-                      className="w-8 h-8 cursor-pointer text-blue-gray-800 p-1.5 rounded-full"
-                    />
+                  <div
+                    onClick={toggleDarkMode}
+                    className="flex items-center py-2 mt-2 hover:bg-blue-gray-50 cursor-pointer rounded-lg"
+                  >
+                    <BiMoon className="w-8 h-8 cursor-pointer text-blue-gray-800 p-1.5 rounded-full" />
                     <span className="text-blue-gray-800 font-semibold">
                       Dark Mode ?
                     </span>
                   </div>
                 ) : (
-                  <div onClick={toggleDarkMode} className="flex items-center py-2 mt-2 hover:bg-gray-800 cursor-pointer rounded-lg">
-                    <BiSun
-                      
-                      className="w-8 h-8 cursor-pointer text-blue-gray-50 p-1.5 rounded-full"
-                    />
+                  <div
+                    onClick={toggleDarkMode}
+                    className="flex items-center py-2 mt-2 hover:bg-gray-800 cursor-pointer rounded-lg"
+                  >
+                    <BiSun className="w-8 h-8 cursor-pointer text-blue-gray-50 p-1.5 rounded-full" />
                     <span className="text-blue-gray-50 font-semibold">
                       Light Mode ?
                     </span>

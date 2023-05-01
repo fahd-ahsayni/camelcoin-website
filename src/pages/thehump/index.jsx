@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import TheHump1 from "./components/TheHump1";
 import TheHump2 from "./components/TheHump2";
 import TheHump3 from "./components/TheHump3";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import { Button } from "@/material";
 
 export default function TheHump() {
   const [activeComponentIndex, setActiveComponentIndex] = useState(0);
@@ -38,7 +39,7 @@ export default function TheHump() {
   }, [activeComponentIndex]);
 
   return (
-    <section className="z-0 h-screen w-screen flex items-center justify-center overflow-y-auto overflow-x-hidden">
+    <section className="z-0 h-screen w-screen flex flex-col items-center justify-center overflow-y-auto overflow-x-hidden">
       <div className="relative">
         <div
           className="top-0 left-0 w-full h-full"
@@ -85,15 +86,20 @@ export default function TheHump() {
           className="absolute top-1/2 ml-4 opacity-50 hover:opacity-100 scale-90 hover:scale-105 transition-all bg-blue-gray-300/50 rounded-full p-1.5 left-0 transform -translate-y-1/2 z-10"
           onClick={handleSwipeRight}
         >
-          <AiOutlineLeft size={40} className="text-blue-gray-900 dark:text-blue-gray-200" />
+          <AiOutlineLeft className="text-blue-gray-900 md:w-10 md:h-10 w-6 h-6 dark:text-blue-gray-200" />
         </button>
         <button
           className="absolute top-1/2 mr-4 opacity-50 hover:opacity-100 scale-90 hover:scale-105 transition-all bg-blue-gray-300/50 rounded-full p-1.5 right-0 transform -translate-y-1/2 z-10"
           onClick={handleSwipeLeft}
         >
-          <AiOutlineRight size={40} className="text-blue-gray-900 dark:text-blue-gray-200" />
+          <AiOutlineRight className="text-blue-gray-900 md:w-10 md:h-10 w-6 h-6 dark:text-blue-gray-200" />
         </button>
       </div>
+      <a href="https://www.thehump.website/" target="_blank" rel="noopener noreferrer" className="py-8 absolute w-full bottom-0 left-0 right-0 flex justify-center items-center flex-col">
+        <Button variant="gradient" color="blue" className="mx-auto">
+          Go to the Hump website
+        </Button>
+      </a>
     </section>
   );
 }

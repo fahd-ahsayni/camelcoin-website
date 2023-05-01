@@ -25,7 +25,7 @@ const features = [
 
 export default function TheHump2() {
   return (
-    <div className="mx-auto max-w-5xl overflow-hidden sm:px-6">
+    <div className="mx-auto max-w-5xl overflow-hidden sm:px-6 lg:mt-4 mt-52">
       <div className="py-10 sm:py-16 lg:py-24 2xl:pl-24">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, key) => (

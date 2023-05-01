@@ -21,11 +21,6 @@ export default function TheHump3() {
           sustainable practices in the camel industry through a global
           blockchain platform
         </Typography>
-        <Link href="/pdf" className="cursor-pointer ">
-          <Button className="mt-10" variant="outlined" color="brown">
-            Read More ...
-          </Button>
-        </Link>
       </div>
     </div>
   );

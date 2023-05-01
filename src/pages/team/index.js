@@ -1,81 +1,92 @@
 import { Typography } from "@/material";
 import Image from "next/image";
 
+import person1 from "../assets/team/person1.jpg";
+import person2 from "../assets/team/person2.jpg";
+import person3 from "../assets/team/person3.png";
+import person4 from "../assets/team/person4.jpg";
+import person5 from "../assets/team/person5.jpg";
+import person6 from "../assets/team/person6.jpg";
+import person7 from "../assets/team/person7.jpg";
+import person8 from "../assets/team/person8.jpg";
+import person9 from "../assets/team/person9.jpg";
+import person10 from "../assets/team/person10.jpg";
+import person11 from "../assets/team/person11.jpg";
+import person12 from "../assets/team/person12.png";
 
 const teamMembers = [
   {
     name: "Issa Jeremy Vector",
     role: "CEO of CML GLOBAL",
-    imageSrc: "/team/person1.jpg",
+    imageSrc: person1,
     altText: "Issa Jeremy Vector",
   },
   {
     name: "Reda El Bakraouy",
     role: "Design Operations Manager",
-    imageSrc: "/team/person2.jpg",
+    imageSrc: person2,
     altText: "Reda El Bakraouy",
   },
   {
     name: "Lucas Kacem",
     role: "CEO of Digital Unicorn",
-    imageSrc: "/team/person3.png",
+    imageSrc: person3,
     altText: "Lucas Kacem",
   },
   {
     name: "Abdul Raziq Kakar",
     role: "Chief Development Officer",
-    imageSrc: "/team/person4.jpg",
+    imageSrc: person4,
     altText: "Abdul Raziq Kakar",
   },
   {
     name: "Bryan Truong",
     role: "CEO of Digital Unicorn",
-    imageSrc: "/team/person5.jpg",
+    imageSrc: person5,
     altText: "Bryan Truong",
   },
   {
     name: "Rayan EL Kalache",
     role: "Commercial Director",
-    imageSrc: "/team/person6.jpg",
+    imageSrc: person6,
     altText: "Rayan EL Kalache",
   },
   {
     name: "Andres Johnsson",
     role: "Blockchain Expert",
-    imageSrc: "/team/person7.jpg",
+    imageSrc: person7,
     altText: "Andres Johnsson",
   },
   {
     name: "Noel Andrade",
     role: "Listing Director",
-    imageSrc: "/team/person8.jpg",
+    imageSrc: person8,
     altText: "Noel Andrade",
   },
   {
     name: "frà Dureuil",
     role: "Nomads Culture Expert",
-    imageSrc: "/team/person9.jpg",
+    imageSrc: person9,
     altText: "frà Dureuil",
   },
   {
     name: "Ilse Koehler-Rollefson",
     role: "Camels Specialist Ethnoveterinary & Writer",
-    imageSrc: "/team/person10.jpg",
+    imageSrc: person10,
     altText: "Ilse Koehler-Rollefson",
   },
   {
     name: "Dr. Bernar Faye",
     role: "Global Camelid Expert",
-    imageSrc: "/team/person11.jpg",
+    imageSrc: person11,
     altText: "Dr. Bernar Faye",
   },
   {
     name: "Camel STAR",
     role: "Influencer & Desert Expert",
-    imageSrc: "/team/person12.png",
+    imageSrc: person12,
     altText: "Camel STAR",
   },
-  // Add more team members here
 ];
 
 export default function Team() {
@@ -107,16 +118,17 @@ export default function Team() {
               ) : null}
               <div key={member.name}>
                 <Image
-                  className="object-cover mx-auto rounded-lg w-28 h-28"
+                  className="object-cover mx-auto rounded-lg w-28 h-28 opacity-0 transition-opacity duration-[2s]"
                   src={member.imageSrc}
                   alt={member.altText}
                   width={260}
                   height={260}
+                  onLoadingComplete={(image) => image.classList.remove('opacity-0')}
                 />
                 <p className="mt-8 font-semibold leading-tight text-blue-gray-900 dark:text-blue-gray-50">
                   {member.name}
                 </p>
-                <p className="mt-1 text-base leading-tight text-blue-gray-600 dark:text-blue-gray-300">
+                <p className="mt-1 text-sm leading-tight text-blue-gray-600 dark:text-blue-gray-300">
                   {member.role}
                 </p>
               </div>
