@@ -10,13 +10,10 @@ export default function About() {
           <div className="relative z-10 lg:py-16">
             <div className="relative h-64 sm:h-80 lg:h-full">
               <Image
-                height={400}
-                width={400}
                 alt="House"
-                placeholder="blure"
-                priority
                 src={myImage}
-                className="absolute inset-0 h-full w-full object-cover"
+                className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-[0.5s]"
+                onLoadingComplete={(image) => image.classList.remove('opacity-0')}
               />
             </div>
           </div>
@@ -48,26 +45,26 @@ export default function About() {
                 the platform to thousands and all needs (oils, honeys, herbs...)
               </p>
               <div className="flex flex-col md:flex-row items-center justify-start space-x-0 md:space-y-0 md:space-x-6 space-y-4 mt-8">
-                <a>
+                <a href="https://drive.google.com/file/d/10Z7uqe5OKnL6x0WjQ_mAeMOWTOvup6j-/view?usp=share_link" target="blank">
                   <Button color="brown" variant="gradient" className="w-full">
                     Project Whitepaper
                   </Button>
                 </a>
 
-                <a>
+                <a href="https://drive.google.com/file/d/18H4Ojo3y54gbL7ehp1EiBB9mtYBQ-FfU/view?usp=share_link" target="blank">
                   <Button color="brown" variant="gradient" className="w-full">
                     Blockchain Whitepaper
                   </Button>
                 </a>
               </div>
               <div className="flex flex-col md:flex-row items-center justify-start mt-4 md:mt-3 space-x-0 md:space-y-0 space-y-4 md:space-x-6">
-                <a>
+              <a href="https://drive.google.com/file/d/1c4xhP0_hx_tzwb4vQWhmlsJu9zEN4U9E/view?usp=share_link" target="blank">
                   <Button color="brown" variant="gradient" className="w-full">
                     Project Greenpaper
                   </Button>
                 </a>
 
-                <a>
+                <a href="https://drive.google.com/file/d/1k-wLcAjORlStUm0z6CnUPPSHuie47Y4O/view?usp=share_link" target="blank">
                   <Button color="brown" variant="gradient" className="w-full">
                     Camelcoin Pitch Deck
                   </Button>
