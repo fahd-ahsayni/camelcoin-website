@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { useTypewriter } from "react-simple-typewriter";
 import TheHumpApp from "../../assets/theHumpApp.png";
 
 export default function TheHump1() {
@@ -8,7 +8,7 @@ export default function TheHump1() {
     loop: 0,
   });
   return (
-    <section className="overflow-hidden py-12 bg-brown-600 rounded-md">
+    <section className="overflow-hidden py-12 mt-32 bg-brown-600 rounded-md">
       <div className="px-4 mx-auto bg-brown-600 max-w-7xl sm:px-6 lg:px-8">
         <div className="py-10 sm:py-16 lg:py-24 2xl:pl-24">
           <div className="grid items-center grid-cols-1 gap-y-12 lg:grid-cols-2 lg:gap-x-8 2xl:gap-x-20">
