@@ -59,7 +59,7 @@ export default function TokenDistribution() {
         >
           Token Distribution
         </Typography>
-        <p className="mt-1 text-sm leading-6 text-blue-gray-500 dark:text-blue-gray-200">
+        <p className="mt-1 text-sm leading-6 text-blue-gray-800 dark:text-blue-gray-200">
           Here are some of the mains informations concernig the camelcoin token
           on Cardano blockchain before {"it's"} switch to th CameLink
           blockchain. Most of those main functions will stay after that. There
@@ -91,7 +91,7 @@ export default function TokenDistribution() {
                   {description}
                 </a>
               ) : (
-                <dd className="mt-1 text-sm flex flex-wrap overflow-auto leading-6 text-blue-gray-700 dark:text-blue-gray-200 sm:col-span-2 sm:mt-0">
+                <dd className="mt-1 text-sm flex flex-wrap overflow-auto leading-6 text-blue-gray-800 dark:text-blue-gray-200 sm:col-span-2 sm:mt-0">
                   {description}
                 </dd>
               )}

@@ -4,7 +4,7 @@ import TheHumpApp from "../../assets/theHumpApp.png";
 
 export default function TheHump1() {
   const [text] = useTypewriter({
-    words: ["Order", "Tracking", "NFTs"],
+    words: ["CARDANO", "AVALANCHE", "LIVE NFT MINTING"],
     loop: 0,
   });
   return (

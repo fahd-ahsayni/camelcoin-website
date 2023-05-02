@@ -16,7 +16,7 @@ import person12 from "../assets/team/person12.png";
 
 const teamMembers = [
   {
-    name: "Issa Jeremy Vector",
+    name: "Issa Jeremy Victor",
     role: "CEO of CML GLOBAL",
     imageSrc: person1,
     altText: "Issa Jeremy Vector",
@@ -64,7 +64,7 @@ const teamMembers = [
     altText: "Noel Andrade",
   },
   {
-    name: "frà Dureuil",
+    name: "françoise Dureuil",
     role: "Nomads Culture Expert",
     imageSrc: person9,
     altText: "frà Dureuil",

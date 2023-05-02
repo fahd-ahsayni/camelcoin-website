@@ -31,7 +31,7 @@ export default function TheHump() {
       } else {
         setActiveComponentIndex(0);
       }
-    }, 7500);
+    }, 8000);
 
     return () => {
       clearInterval(intervalId);
@@ -83,19 +83,19 @@ export default function TheHump() {
         </div>
 
         <button
-          className="absolute top-1/2 ml-4 opacity-50 hover:opacity-100 scale-90 hover:scale-105 transition-all bg-blue-gray-300/50 rounded-full p-1.5 left-0 transform -translate-y-1/2 z-10"
+          className="absolute hidden lg:block top-1/2 ml-4 opacity-50 hover:opacity-100 scale-90 hover:scale-105 transition-all bg-blue-gray-300/50 rounded-full p-1.5 left-0 transform -translate-y-1/2 z-10"
           onClick={handleSwipeRight}
         >
           <AiOutlineLeft className="text-blue-gray-900 md:w-10 md:h-10 w-6 h-6 dark:text-blue-gray-200" />
         </button>
         <button
-          className="absolute top-1/2 mr-4 opacity-50 hover:opacity-100 scale-90 hover:scale-105 transition-all bg-blue-gray-300/50 rounded-full p-1.5 right-0 transform -translate-y-1/2 z-10"
+          className="absolute hidden lg:block top-1/2 mr-4 opacity-50 hover:opacity-100 scale-90 hover:scale-105 transition-all bg-blue-gray-300/50 rounded-full p-1.5 right-0 transform -translate-y-1/2 z-10"
           onClick={handleSwipeLeft}
         >
           <AiOutlineRight className="text-blue-gray-900 md:w-10 md:h-10 w-6 h-6 dark:text-blue-gray-200" />
         </button>
       </div>
-      <a href="https://www.thehump.website/" target="_blank" rel="noopener noreferrer" className="py-8 absolute w-full bottom-0 left-0 right-0 flex justify-center items-center flex-col">
+      <a href="https://www.thehump.website/" target="_blank" rel="noopener noreferrer" className="py-8 md:absolute relative w-full bottom-0 left-0 right-0 flex justify-center items-center flex-col">
         <Button variant="gradient" color="blue" className="mx-auto">
           Go to the Hump website
         </Button>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { AiOutlineWhatsApp } from "react-icons/ai";
-import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { IoCallSharp } from "react-icons/io5";
 import RotateCoin from "./assets/aaa.gif"
 
@@ -17,7 +17,7 @@ export default function Footer() {
             className="m-auto w-24"
           />
 
-          <p className="mt-1 text-center max-w-2xl text-sm leading-6 text-blue-gray-500 dark:text-blue-gray-200">
+          <p className="mt-1 text-center max-w-2xl text-sm leading-6 text-blue-gray-800 dark:text-blue-gray-200">
             The administrative information provided through the Website does not
             replace the legal publicity of laws, regulations, plans, general
             provisions and acts that have to be formally published in the

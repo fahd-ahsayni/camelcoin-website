@@ -8,37 +8,37 @@ const progressData = [
     title: "Projects Funding",
     progress: 50,
     progresBackground: "bg-gradient-to-r from-red-300 to-red-600",
-    color: "text-red-500",
+    color: "text-red-600",
   },
   {
     title: "Security Reserve",
     progress: 15,
     progresBackground: "bg-gradient-to-r from-blue-300 to-blue-600",
-    color: "text-blue-500",
+    color: "text-blue-600",
   },
   {
     title: "Camelink Development",
     progress: 20,
     progresBackground: "bg-gradient-to-r from-lime-300 to-lime-600",
-    color: "text-lime-500",
+    color: "text-lime-600",
   },
   {
     title: "Team & Partners",
     progress: 7,
     progresBackground: "bg-gradient-to-r from-amber-300 to-amber-600",
-    color: "text-amber-500",
+    color: "text-amber-600",
   },
   {
     title: "Promotion & Marketing",
     progress: 5,
     progresBackground: "bg-gradient-to-r from-green-300 to-green-600",
-    color: "text-green-500",
+    color: "text-green-600",
   },
   {
     title: "Legal Works",
     progress: 3,
     progresBackground: "bg-gradient-to-r from-cyan-300 to-cyan-600",
-    color: "text-cyan-500",
+    color: "text-cyan-600",
   },
 ];
 
@@ -50,15 +50,10 @@ export default function Chart() {
           <div className="text-center">
             <Typography
               variant="h2"
-              className="text-blue-gray-700 dark:text-white md:text-2xl"
+              color="brown"
+              textGradient
             >
               Tokenomics chart
-            </Typography>
-            <Typography
-              variant="paragraph"
-              className="max-w-xl mx-auto mb-4 mt-2 leading-relaxed text-blue-gray-500 dark:text-blue-gray-300"
-            >
-              Total supply 170 Million
             </Typography>
           </div>
           <StatsHeader />
@@ -73,7 +68,7 @@ export default function Chart() {
                         className="flex space-y-4 flex-col items-start"
                       >
                         <h5>
-                          <span className="text-lg text-blue-gray-700 dark:text-blue-gray-300 mr-4">
+                          <span className="text-lg text-blue-gray-800 dark:text-blue-gray-300 mr-4">
                             {title}
                           </span>
                           <span className={`${color} text-lg font-semibold`}>

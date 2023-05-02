@@ -43,7 +43,8 @@ export default function OurTacticalPartners() {
           <div className="m-auto text-center md:w-8/12 lg:w-6/12">
             <Typography
               variant="h2"
-              className="text-blue-gray-700 dark:text-white md:text-2xl"
+              color="brown"
+              textGradient
             >
               Our Tactical Partners
             </Typography>

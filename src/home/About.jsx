@@ -5,11 +5,12 @@ import myImage from "./assets/about.png";
 export default function About() {
   return (
     <section>
-      <div className="mx-auto mt-12 max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="w-full mb-8 flex items-center justify-center">
           <Typography
             variant="h2"
-            className="text-blue-gray-700 text-center dark:text-white md:text-2xl"
+            color="brown"
+            textGradient
           >
             About Us
           </Typography>
@@ -30,17 +31,17 @@ export default function About() {
           <div className="relative flex items-center bg-gray-50 dark:bg-blue-gray-900">
             <span className="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 dark:bg-blue-gray-900 lg:bg-gray-50" />
             <div className="p-8 sm:p-16 lg:p-24">
-              <h3 className="text-brown-400 text-lg font-semibold tracking-wider">
+              <Typography color="brown" textGradient variant="h4">
                 A Fulfilled Ecosystem
-              </h3>
+              </Typography>
               <h2 className="text-2xl font-bold sm:text-3xl dark:text-gray-50 text-blue-gray-900">
                 From projects to your house in a fairtrade way
               </h2>
-              <p className="mt-4 text-blue-gray-700 font-medium dark:text-gray-300">
+              <p className="mt-4 text-blue-gray-900 font-medium dark:text-gray-300">
                 A cryptocurrency based in the Sahara, near the largest
                 livestocks and wild animals.
               </p>
-              <p className="mt-4 text-blue-gray-600 dark:text-blue-gray-200">
+              <p className="mt-4 text-blue-gray-800 dark:text-blue-gray-200">
                 The camelcoin team aims to create and develop a cryptocurrency
                 (Camelcoin), design its own information exchange network
                 (CameLink blockchain) and facilitate the democratization and

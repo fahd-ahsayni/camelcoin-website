@@ -12,7 +12,6 @@ import { GiCamelHead } from "react-icons/gi";
 import {
   HiCubeTransparent,
   HiOutlineDevicePhoneMobile,
-  HiOutlineInformationCircle,
   HiOutlineSquare3Stack3D,
 } from "react-icons/hi2";
 import { AiOutlineTeam } from "react-icons/ai";
@@ -45,7 +44,7 @@ const products = [
 
 const callsToAction = [
   {
-    name: "Conatact us",
+    name: "Contact us",
     href: "/contact",
     icon: IoMailOutline,
   },
@@ -225,13 +224,13 @@ export default function Header() {
             <span>CML Global</span>
           </a>
           <a
-            href="https://cameleader.com/"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm space-x-2 flex items-center justify-center font-semibold leading-6 text-blue-gray-900 dark:text-blue-gray-50"
           >
             <GiCamelHead className="w-5 h-5" />
-            <span>Cameleader</span>
+            <span>Cameleader (coming soon)</span>
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -344,10 +343,10 @@ export default function Header() {
                   onClick={() => setMobileMenuOpen(false)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://cameleader.com/"
+                  href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-blue-gray-900 dark:hover:bg-gray-800 dark:text-blue-gray-50 hover:bg-blue-gray-50"
                 >
-                  Cameleader
+                  Cameleader (coming soon)
                 </a>
               </div>
               <div className="">
