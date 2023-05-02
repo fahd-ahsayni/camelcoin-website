@@ -1,10 +1,11 @@
 import Image from "next/image";
 import { useTypewriter } from "react-simple-typewriter";
 import TheHumpApp from "../../assets/theHumpApp.png";
+import { Typography } from "@/material";
 
 export default function TheHump1() {
   const [text] = useTypewriter({
-    words: ["CARDANO", "AVALANCHE", "LIVE NFT MINTING"],
+    words: ["Cardano", "Avalanche", "Live NFT Minting"],
     loop: 0,
   });
   return (
@@ -13,13 +14,11 @@ export default function TheHump1() {
         <div className="py-10 sm:py-16 lg:py-24 2xl:pl-24">
           <div className="grid items-center grid-cols-1 gap-y-12 lg:grid-cols-2 lg:gap-x-8 2xl:gap-x-20">
             <div className="z-10">
-              <h2 className="text-3xl lg:h-32 h-24 font-bold leading-tight text-white sm:text-4xl lg:text-5xl lg:leading-tight">
-              One Wallet App For
-              <span className="block">
-                {text}
-              </span>
-              </h2>
-              <p className="mt-4 text-base text-gray-50">
+              <Typography color="white" variant="h2">
+                One Wallet App For
+                <span className="block">{text}</span>
+              </Typography>
+              <p className="mt-8 text-base text-gray-50">
                 The Hump Wallet App serves as the hub for ordering and tracking
                 products, providing access from anywhere at any time. It ensures
                 the security of valuables through NFT property certificates.
@@ -29,7 +28,12 @@ export default function TheHump1() {
                 illegal trafficking.
               </p>
               <div className="flex flex-row items-center mt-8 space-x-4 lg:mt-12">
-                <a href="https://apps.apple.com/ma/app/cml-globals-the-hump/id1619884482?l=fr" target="_blank" className="z-10" role="button">
+                <a
+                  href="https://apps.apple.com/ma/app/cml-globals-the-hump/id1619884482?l=fr"
+                  target="_blank"
+                  className="z-10"
+                  role="button"
+                >
                   <img
                     className="w-auto h-14"
                     src="https://cdn.rareblocks.xyz/collection/celebration/images/cta/8/btn-app-store.svg"
