@@ -31,7 +31,7 @@ export default function About() {
           <div className="relative flex items-center bg-gray-50 dark:bg-blue-gray-900">
             <span className="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 dark:bg-blue-gray-900 lg:bg-gray-50" />
             <div className="p-8 sm:p-16 lg:p-24">
-              <Typography color="brown" textGradient variant="h4">
+              <Typography color="brown" textGradient variant="h3">
                 A Fulfilled Ecosystem
               </Typography>
               <h2 className="text-2xl font-bold sm:text-3xl dark:text-gray-50 text-blue-gray-900">

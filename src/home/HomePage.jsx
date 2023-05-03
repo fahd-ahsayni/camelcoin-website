@@ -13,7 +13,7 @@ function Model() {
         onClick={handleOpen}
         className="hidden sm:mb-8 sm:flex sm:justify-center"
       >
-        <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-blue-gray-600 dark:text-blue-gray-200 ring-1 ring-blue-gray-900/10 dark:ring-blue-gray-300/10 hover:ring-blue-gray-900/20 dark:hover:ring-blue-gray-300/20 dark:bg-gray-500/10">
+        <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-blue-gray-800 dark:text-blue-gray-200 ring-1 ring-blue-gray-900/10 dark:ring-blue-gray-300/10 hover:ring-blue-gray-900/20 dark:hover:ring-blue-gray-300/20 dark:bg-gray-500/10">
           Chase your dreams.{" "}
           <a
             href="#"
@@ -103,7 +103,7 @@ export default function HomePage() {
               </span>{" "}
               project, welcome to Fairtrade Revolution
             </h1>
-            <p className="mt-6 md:text-lg text-sm leading-8 text-blue-gray-600 dark:text-blue-gray-100">
+            <p className="mt-6 md:text-lg text-sm leading-8 text-blue-gray-800 dark:text-blue-gray-100">
               Join the decentralized finance revolution with Camelcoin - the
               secure and efficient digital currency that anyone can use with
               ease.

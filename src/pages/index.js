@@ -78,27 +78,35 @@ export default function Home() {
         />
         <meta name="keywords" content={SEO_KEYWORDS.join(", ")} />
       </Head>
-      <section className="dark:bg-gray-900/90 bg-blue-gray-50/90">
+      <section className="dark:bg-gray-900/90 bg-white/90">
         <Image
           src={Background}
           className="absolute w-full h-full top-0 left-0 right-0 opacity-0 transition-opacity duration-[2s] object-cover"
           alt="background camelcoin"
           onLoadingComplete={(image) => handleOnLoadComplete(image)}
         />
-        <h2 className="sr-only">
-          Located in the Sahara, near vast livestock and wildlife populations,{" "}
-          <strong>Camelcoin</strong> is a cryptocurrency project with three
-          primary goals: develop <mark>Camelcoin</mark> as a digital currency,
-          establish CameLink blockchain for information exchange, and promote
-          global acceptance of natural brown products. This comprehensive
-          approach aims to boost economic development surrounding camelids,
-          drive innovation across sectors (food, cosmetics, tourism, textiles,
-          sports, etc.), enhance global market positioning, and create
-          income-generating opportunities in underprivileged regions. The
-          ecosystem will later open to 200 similar projects, expanding the{" "}
-          {"platform's"} offerings to include thousands of natural products such
-          as oils, honeys, and herbs.
-        </h2>
+        <main className="sr-only">
+          <h1>
+            CAMELCOIN API, camelcoin crypto web 3.0 metaverse project camels chameau crypto project Sahara alaayoune city marooc
+          </h1>
+          <h2>
+            camelcoin laayoune city alaayoune maroc morocco Sahara cameleader CML Global crypto trading betcoin
+          </h2>
+          <h2>
+            Located in the Sahara, near vast livestock and wildlife populations,{" "}
+            <strong>Camelcoin</strong> is a cryptocurrency project with three
+            primary goals: develop <mark>Camelcoin</mark> as a digital currency,
+            establish CameLink blockchain for information exchange, and promote
+            global acceptance of natural brown products. This comprehensive
+            approach aims to boost economic development surrounding camelids,
+            drive innovation across sectors (food, cosmetics, tourism, textiles,
+            sports, etc.), enhance global market positioning, and create
+            income-generating opportunities in underprivileged regions. The
+            ecosystem will later open to 200 similar projects, expanding the{" "}
+            {"platform's"} offerings to include thousands of natural products
+            such as oils, honeys, and herbs.
+          </h2>
+        </main>
         <HomePage />
         <About />
         <OurTacticalPartners />
