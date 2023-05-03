@@ -43,7 +43,7 @@ export default function Contact() {
         />
         <meta name="keywords" content={SEO_KEYWORDS.join(", ")} />
       </Head>
-      <section className="py-10 mt-32 lg:mt-12 h-screen flex items-center justify-center bg-blue-gray-50 dark:bg-gray-900 sm:py-16 lg:py-24">
+      <section className="py-10 mt-32 lg:mt-12 h-screen flex items-center justify-center  sm:py-16 lg:py-24">
         <div
           className="absolute z-0 opacity-30 inset-0 blur-[118px] max-w-lg h-[800px] mx-auto sm:max-w-3xl sm:h-[400px]"
           style={{
