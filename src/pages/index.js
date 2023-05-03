@@ -24,8 +24,8 @@ const SEO_KEYWORDS = [
 
 export default function Home() {
   const handleOnLoadComplete = (image) => {
-    image.classList.remove("opacity-0");
-    image.classList.add("opacity-20");
+    image.classList.remove("opacity-0", "dark:opacity-0");
+    image.classList.add("opacity-10", "dark:opacity-20");
   };
   return (
     <>
@@ -81,7 +81,7 @@ export default function Home() {
       <section className="dark:bg-gray-900/90 bg-white/90">
         <Image
           src={Background}
-          className="absolute w-full h-full top-0 left-0 right-0 opacity-0 transition-opacity duration-[2s] object-cover"
+          className="absolute w-full h-full top-0 dark:opacity-0 left-0 right-0 opacity-0 transition-opacity duration-[2s] object-cover"
           alt="background camelcoin"
           onLoadingComplete={(image) => handleOnLoadComplete(image)}
         />
