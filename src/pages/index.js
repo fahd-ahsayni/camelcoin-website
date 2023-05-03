@@ -20,6 +20,10 @@ const SEO_KEYWORDS = [
   "Tactical Partners",
   "Crypto Charts",
   "Project CamelCoin",
+  "The Hump App",
+  "The CamelCoin Project Fairtrade Revolution",
+  "laayoune",
+  "sahara"
 ];
 
 export default function Home() {
@@ -95,10 +99,10 @@ export default function Home() {
           <h2>
             Located in the Sahara, near vast livestock and wildlife populations,{" "}
             <strong>Camelcoin</strong> is a cryptocurrency project with three
-            primary goals: develop <mark>Camelcoin</mark> as a digital currency,
+            primary goals: develop <b>Camelcoin</b> as a digital currency,
             establish CameLink blockchain for information exchange, and promote
-            global acceptance of natural brown products. This comprehensive
-            approach aims to boost economic development surrounding camelids,
+            global acceptance of natural brown products. <mark>This comprehensive
+            approach aims to boost economic development surrounding camelids</mark>,
             drive innovation across sectors (food, cosmetics, tourism, textiles,
             sports, etc.), enhance global market positioning, and create
             income-generating opportunities in underprivileged regions. The
