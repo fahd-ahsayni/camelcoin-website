@@ -37,7 +37,7 @@ export default function TheHump1() {
                   <img
                     className="w-auto h-14"
                     src="https://cdn.rareblocks.xyz/collection/celebration/images/cta/8/btn-app-store.svg"
-                    alt=""
+                    alt="The Hummp - app store link"
                   />
                 </a>
                 <a
@@ -50,7 +50,7 @@ export default function TheHump1() {
                   <img
                     className="w-auto h-14"
                     src="https://cdn.rareblocks.xyz/collection/celebration/images/cta/8/btn-play-store.svg"
-                    alt=""
+                    alt="The Hummp - play store link"
                   />
                 </a>
               </div>
