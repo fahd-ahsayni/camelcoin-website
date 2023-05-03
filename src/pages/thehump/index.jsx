@@ -96,7 +96,7 @@ export default function TheHump() {
         </button>
       </div>
       <a href="https://www.thehump.website/" target="_blank" rel="noopener noreferrer" className="py-8 md:absolute relative w-full bottom-0 left-0 right-0 flex justify-center items-center flex-col">
-        <Button variant="gradient" color="blue" className="mx-auto">
+        <Button variant="text" color="blue" className="mx-auto">
           Go to the Hump website
         </Button>
       </a>

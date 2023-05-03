@@ -16,7 +16,7 @@ export default function TheHump1() {
             <div className="z-10">
               <Typography color="white" variant="h2">
                 One Wallet App For
-                <span className="block">{text}</span>
+                <span className="block"><span className="opacity-0 -m-2">:</span> {text}</span>
               </Typography>
               <p className="mt-8 text-base text-gray-50">
                 The Hump Wallet App serves as the hub for ordering and tracking
