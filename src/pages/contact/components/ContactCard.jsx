@@ -34,10 +34,10 @@ export default function ContactCard() {
 
     emailjs
       .send(
-        "service_yf2s7tt",
-        "template_e1dzfvd",
+        "",
+        "",
         formData,
-        "AYrkx1jjG82zspr1b"
+        ""
       )
       .then(
         (result) => {
